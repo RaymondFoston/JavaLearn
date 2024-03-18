@@ -1,0 +1,3 @@
+1. webserver是server服务器，直接运行main程序
+2. webservlet是手写servlet，打包为war包放在tomcat下运行
+3. webapplication的java程序为空，有jsp网页，将整个程序部署在tomcat运行
