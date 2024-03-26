@@ -9,17 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ssm-crud" />
         <module name="UseLogger" />
-        <module name="SpingSourcede" />
-        <module name="demo" />
+        <module name="springbootDemo" />
         <module name="Java-WebApplication" />
         <module name="crawler" />
         <module name="JunitFramework" />
         <module name="MyBatis" />
-        <module name="springbootDemo3" />
         <module name="Java-WebServer" />
         <module name="CreateObject" />
         <module name="javaSE" />
-        <module name="JavaLearn" />
+        <module name="SpringSourceCode" />
         <module name="CRM" />
         <module name="Java-WebServlet" />
         <module name="springMVC" />
@@ -37,10 +35,10 @@
       <module name="javaSE" target="1.8" />
       <module name="JunitFramework" target="17" />
       <module name="MyBatis" target="17" />
-      <module name="SpingSourcede" target="17" />
+      <module name="springbootDemo" target="17" />
       <module name="springbootDemo1" target="17" />
-      <module name="springbootDemo3" target="17" />
       <module name="springMVC" target="17" />
+      <module name="SpringSourceCode" target="17" />
       <module name="ssm-crud" target="17" />
       <module name="testFramework" target="17" />
       <module name="UseLogger" target="17" />
@@ -49,8 +47,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="springbootDemo" options="-parameters" />
       <module name="springbootDemo1" options="-parameters" />
-      <module name="springbootDemo3" options="-parameters" />
     </option>
   </component>
 </project>

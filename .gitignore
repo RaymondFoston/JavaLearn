@@ -6,6 +6,7 @@ target/
 
 ### maven ###
 .mvn
+mvnw*
 # !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -38,6 +39,5 @@ build/
 .vscode/
 
 
-### maven ###
-.mvn
-mvnw*
+### MacOS file ###
+.DS_Store

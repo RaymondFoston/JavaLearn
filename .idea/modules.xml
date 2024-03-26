@@ -7,16 +7,14 @@
       <module fileurl="file://$PROJECT_DIR$/WebApplication/Java-WebApplication.iml" filepath="$PROJECT_DIR$/WebApplication/Java-WebApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServer/Java-WebServer.iml" filepath="$PROJECT_DIR$/WebServer/Java-WebServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServlet/Java-WebServlet.iml" filepath="$PROJECT_DIR$/WebServlet/Java-WebServlet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/JavaLearn.iml" filepath="$PROJECT_DIR$/.idea/JavaLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/JunitFramework/JunitFramework.iml" filepath="$PROJECT_DIR$/JunitFramework/JunitFramework.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis/MyBatis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Sping-SourceCode_learn/SpingSourcede.iml" filepath="$PROJECT_DIR$/Sping-SourceCode_learn/SpingSourcede.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sping-SourceCode_learn/SpringSourceCode.iml" filepath="$PROJECT_DIR$/Sping-SourceCode_learn/SpringSourceCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logger/UseLogger.iml" filepath="$PROJECT_DIR$/Logger/UseLogger.iml" />
       <module fileurl="file://$PROJECT_DIR$/crawler/crawler.iml" filepath="$PROJECT_DIR$/crawler/crawler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springbootDemo2/demo.iml" filepath="$PROJECT_DIR$/springbootDemo2/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSE/javaSE.iml" filepath="$PROJECT_DIR$/JavaSE/javaSE.iml" />
       <module fileurl="file://$PROJECT_DIR$/springMVC_01/springMVC.iml" filepath="$PROJECT_DIR$/springMVC_01/springMVC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springbootDome3/springbootDemo3.iml" filepath="$PROJECT_DIR$/springbootDome3/springbootDemo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootDomo/springbootDemo.iml" filepath="$PROJECT_DIR$/springbootDomo/springbootDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssmcrud/ssm-crud.iml" filepath="$PROJECT_DIR$/ssmcrud/ssm-crud.iml" />
     </modules>
   </component>
