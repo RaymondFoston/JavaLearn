@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/bingfa/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/bingfa/build" />
+      <excludeFolder url="file://$MODULE_DIR$/crawler/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/CreateObject/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/CreateObject/target" />
+      <excludeFolder url="file://$MODULE_DIR$/Database Access And Operation/src/main/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/Database Access And Operation/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/Database Access And Operation/target" />
+      <excludeFolder url="file://$MODULE_DIR$/Logger/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/Logger/target" />
+      <excludeFolder url="file://$MODULE_DIR$/WebApplication/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/WebServer/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/WebServlet/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/springbootDemo1/.mvn" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

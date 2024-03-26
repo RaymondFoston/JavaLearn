@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ssm-crud" />
+        <module name="UseLogger" />
+        <module name="SpingSourcede" />
+        <module name="demo" />
+        <module name="Java-WebApplication" />
+        <module name="crawler" />
+        <module name="JunitFramework" />
+        <module name="MyBatis" />
+        <module name="springbootDemo3" />
+        <module name="Java-WebServer" />
+        <module name="CreateObject" />
+        <module name="javaSE" />
+        <module name="JavaLearn" />
+        <module name="CRM" />
+        <module name="Java-WebServlet" />
+        <module name="springMVC" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="crawler" target="17" />
+      <module name="CreateObject" target="17" />
+      <module name="CRM" target="17" />
+      <module name="demo" target="17" />
+      <module name="Java-WebApplication" target="17" />
+      <module name="Java-WebServer" target="17" />
+      <module name="Java-WebServlet" target="17" />
+      <module name="JavaLearn" target="17" />
+      <module name="javaSE" target="1.8" />
+      <module name="JunitFramework" target="17" />
+      <module name="MyBatis" target="17" />
+      <module name="SpingSourcede" target="17" />
+      <module name="springbootDemo1" target="17" />
+      <module name="springbootDemo3" target="17" />
+      <module name="springMVC" target="17" />
+      <module name="ssm-crud" target="17" />
+      <module name="testFramework" target="17" />
+      <module name="UseLogger" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="springbootDemo1" options="-parameters" />
+      <module name="springbootDemo3" options="-parameters" />
+    </option>
+  </component>
+</project>
