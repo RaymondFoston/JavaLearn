@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/2.7.0/src/main/resources" charset="UTF-8" />
-    <file url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/2.7.1/src/main/resources" charset="UTF-8" />
-    <file url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/3.2.2/src/main/resources" charset="UTF-8" />
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/CreateObject/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CreateObject/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Database Access And Operation/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Database Access And Operation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DatabaseAccesAndOperation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DatabaseAccesAndOperation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JunitFramework/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/JunitFramework/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Logger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Logger/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/MyBatis/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/MyBatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Sping-SourceCode_learn/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Sping-SourceCode_learn/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebServer/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WebServer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebServlet/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WebServlet/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/crawler/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/crawler/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springMVC_01/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springMVC_01/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springbootDemo1/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springbootDemo2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springbootDomo/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ssmcrud/src/main/Resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ssmcrud/src/main/java" charset="UTF-8" />
   </component>

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Database Access And Operation/CRM.iml" filepath="$PROJECT_DIR$/Database Access And Operation/CRM.iml" />
       <module fileurl="file://$PROJECT_DIR$/CreateObject/CreateObject.iml" filepath="$PROJECT_DIR$/CreateObject/CreateObject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Database Access And Operation/DatabaseAccesAndOperation.iml" filepath="$PROJECT_DIR$/Database Access And Operation/DatabaseAccesAndOperation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DatabaseAccesAndOperation/DatabaseAccessAndOperation.iml" filepath="$PROJECT_DIR$/DatabaseAccesAndOperation/DatabaseAccessAndOperation.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebApplication/Java-WebApplication.iml" filepath="$PROJECT_DIR$/WebApplication/Java-WebApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServer/Java-WebServer.iml" filepath="$PROJECT_DIR$/WebServer/Java-WebServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServlet/Java-WebServlet.iml" filepath="$PROJECT_DIR$/WebServlet/Java-WebServlet.iml" />

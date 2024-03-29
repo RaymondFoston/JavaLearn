@@ -8,7 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ssm-crud" />
+        <module name="DatabaseAccesAndOperation" />
         <module name="UseLogger" />
+        <module name="DatabaseAccessAndOperation" />
         <module name="springbootDemo" />
         <module name="Java-WebApplication" />
         <module name="crawler" />
@@ -17,7 +19,6 @@
         <module name="CreateObject" />
         <module name="javaSE" />
         <module name="SpringSourceCode" />
-        <module name="CRM" />
         <module name="Java-WebServlet" />
         <module name="springMVC" />
       </profile>
@@ -25,7 +26,8 @@
     <bytecodeTargetLevel>
       <module name="crawler" target="17" />
       <module name="CreateObject" target="17" />
-      <module name="CRM" target="17" />
+      <module name="DatabaseAccesAndOperation" target="17" />
+      <module name="DatabaseAccessAndOperation" target="17" />
       <module name="demo" target="17" />
       <module name="Java-WebApplication" target="17" />
       <module name="Java-WebServer" target="17" />
