@@ -108,7 +108,7 @@ public class AppTest {
     }
 
     @Test
-    public void test(){
+    public void mybatisTest(){
         //使用Mybatis第一步: 获取sqlSessionFactory对象
         String resource = "mybatis-config.xml";
         InputStream inputStream = null;

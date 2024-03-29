@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/WebServer/Java-WebServer.iml" filepath="$PROJECT_DIR$/WebServer/Java-WebServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServlet/Java-WebServlet.iml" filepath="$PROJECT_DIR$/WebServlet/Java-WebServlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/JunitFramework/JunitFramework.iml" filepath="$PROJECT_DIR$/JunitFramework/JunitFramework.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MyBatis/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sping-SourceCode_learn/SpringSourceCode.iml" filepath="$PROJECT_DIR$/Sping-SourceCode_learn/SpringSourceCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/Logger/UseLogger.iml" filepath="$PROJECT_DIR$/Logger/UseLogger.iml" />
       <module fileurl="file://$PROJECT_DIR$/crawler/crawler.iml" filepath="$PROJECT_DIR$/crawler/crawler.iml" />
