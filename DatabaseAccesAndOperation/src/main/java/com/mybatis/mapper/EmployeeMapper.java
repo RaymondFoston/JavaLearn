@@ -26,9 +26,6 @@ public interface EmployeeMapper {
     public Employee getEmpAndDeptStep(Integer id);
     public List<Employee> getEmpsByDeptId(Integer deptId);
 
-
-
-
     //添加
     public void addEmp(Employee employee);
 

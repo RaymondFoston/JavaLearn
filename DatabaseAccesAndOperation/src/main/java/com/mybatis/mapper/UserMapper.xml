@@ -20,7 +20,8 @@
     <select id="getUserById" parameterType="int" resultType="com.mybatis.entity.User">
         select * from mybatis.user where id=#{id}
     </select>
-    <select id="getUserLikeName" parameterType="String" resultType="com.mybatis.entity.User">
+    <select id="getUserLikeName" parameterType="String"
+            resultType="com.mybatis.entity.User" >
         select * from mybatis.user where name like "%"#{value}"%"
     </select>
     <insert id="addUser" parameterType="com.mybatis.entity.User">

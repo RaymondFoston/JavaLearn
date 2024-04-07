@@ -37,15 +37,20 @@ INSERT INTO `user` VALUES (3, '李四', '987654');
 
 SET FOREIGN_KEY_CHECKS = 1;
 
-CREATE TABLE employee (
-    emp_id int,
-    lastName varchar(60),
-    gendor int,
-    email varchar(60),
-    dep_id int
-);
 
 CREATE TABLE department (
-    dep_id int,
-    departmentName varchar(60)
+    dep_id int not null primary key comment '部门编号',
+    department_name varchar(60)
 );
+
+
+CREATE TABLE employee (
+    emp_id int not null primary key comment '员工编号',
+    last_name varchar(60),
+    gendor int,
+    email varchar(60),
+    dep_id int not null comment '部门编号',
+    foreign key (dep_id) references department (dep_id)
+);
+
+

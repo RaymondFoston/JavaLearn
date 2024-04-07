@@ -3,17 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mybatis.mapper.DepartmentMapper">
-    <resultMap id="dept" type="com.mybatis.entity.Department">
-        <!--id标签定义主键
-               resullt标签定义列
-        -->
-        <id column="id" property="id"/>
-        <result column="dept_name" property="departmentName"/>
-    </resultMap>
+
     <!--deptPlus-->
-    <resultMap id="deptPlus" type="com.mybatis.entity.Department">
-        <id column="dept_id" property="id"/>
-        <result column="dept_name" property="departmentName"/>
+    <resultMap id="dept" type="com.mybatis.entity.Department">
+        <id column="dep_id" property="id"/>
+        <result column="departmentName" property="departmentName"/>
         <!--collection定义关联集合类型属性的封装规则
                     ofType: 指定集合里面元素的类型
         -->

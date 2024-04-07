@@ -15,26 +15,16 @@ databaseId: 指定要使用的数据库厂商，在全局配置文件中需进�
             id： 唯一id方便引用
     -->
     <!--Employee类的映射-->
-    <resultMap id="myEmployee" type="com.mybatis.entity.Employee">
-        <!--指定主键列的封装规则
-              标签id: 定义的主键会在底层有优化
-              标签result： 定义常规列
-              标签属性：
-                column:  指定数据库的表列名
-                property:  指定对应的javabean属性名
-        -->
-        <id column="id" property="id"/>
-        <result column="last_name" property="lastName"/>
-        <!--其他列不指定会自动封装-->
-        <result column="gendor" property="gendor"/>
-        <result column="email" property="email"/>
-
-    </resultMap>
-    <!--联合对象映射方法1-->
-    <resultMap id="myEmployee2" type="com.mybatis.entity.Employee">
-        <id column="id" property="id"/>
-        <result column="last_name" property="lastName"/>
-        <result column="gendor" property="gendor"/>
+    <!--指定主键列的封装规则
+      标签id: 定义的主键会在底层有优化
+      标签result： 定义常规列
+      标签属性：
+        column:  指定数据库的表列名
+        property:  指定对应的javabean属性名-->
+    <resultMap id="employee" type="com.mybatis.entity.Employee">
+        <id column="emp_id" property="id"/>
+        <result column="lastName" property="lastName"/>
+        <result column="gendor" property="Gendor"/>
         <result column="email" property="email"/>
         <!--联合查询，级联属性封装结果集-->
         <result column="dept_id" property="department.id"/>
@@ -118,7 +108,7 @@ databaseId: 指定要使用的数据库厂商，在全局配置文件中需进�
 
     <!--查询-->
     <select id="getEmployeeByID" resultMap="emplyeediscriminator">
-        select * from employee where id = #{id}
+        select * from employee where emp_id = #{id}
     </select>
     <!--<select id="getEmployeeByID" resultMap="myEmployee" databaseId="mysql">-->
         <!--select * from employee where id = #{id}-->
