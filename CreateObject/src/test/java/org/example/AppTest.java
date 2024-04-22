@@ -10,6 +10,9 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+    {
+        System.out.println("代码块执行了");
+    }
     /**
      * Create the test case
      *

@@ -7,7 +7,7 @@
     <properties resource="db.properties"></properties>
     <settings>
         <!--驼峰映射-->
-        <setting name="mapUnderscoreToCamelCase" value="false"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
         <!--日志-->
         <setting name="logImpl" value="log4j"/>
     </settings>

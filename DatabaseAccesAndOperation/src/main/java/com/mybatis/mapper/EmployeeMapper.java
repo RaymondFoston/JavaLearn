@@ -2,6 +2,7 @@ package com.mybatis.mapper;
 
 
 import com.mybatis.entity.Employee;
+import com.mybatis.entity.User;
 import org.apache.ibatis.annotations.MapKey;
 import org.apache.ibatis.annotations.Param;
 
@@ -11,6 +12,7 @@ import java.util.Map;
 public interface EmployeeMapper {
 
     //查询
+    public List<Employee> getEmployeeList();
     public Employee getEmployeeByID(Integer id);
     public Employee getEmpByIdAndLastName(@Param("id") Integer id,@Param("lastName") String lastName);
     public Employee getEmpByMap(Map<String,String> map);
@@ -27,11 +29,16 @@ public interface EmployeeMapper {
     public List<Employee> getEmpsByDeptId(Integer deptId);
 
     //添加
-    public void addEmp(Employee employee);
+    public Boolean addEmployeeCustomID(Employee employee);
+    public Boolean addEmployeeAutoIncreID(Employee employee);
+    public Boolean addEmployeeMap(Map<String, Object> employeeMap);
+
 
     //修改
-    public void updateEmp(Employee employee);
+    public Boolean updateEmployee(Employee employee);
 
     //删除
-    public Boolean deleteEmpById(Integer id);
+    public Boolean deleteEmployeeById(Integer id);
+
+
 }

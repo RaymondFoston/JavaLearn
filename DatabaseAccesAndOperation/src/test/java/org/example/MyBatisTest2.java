@@ -47,9 +47,9 @@ public class MyBatisTest2 {
         try{
             EmployeeMapper employeeMapper = sqlSession.getMapper(EmployeeMapper.class);
             /*添加*/
-            Employee employee = new Employee("Jecyka",0,null);
-            employeeMapper.addEmp(employee);
-            System.out.println(employee.getId());
+//            Employee employee = new Employee(1,"Jecyka",0,null,new Department());
+//            employeeMapper.addEmp(employee);
+//            System.out.println(employee.getId());
             /*修改*/
 //            Employee employee = new Employee(3,"John",1,"John@mail.com");
 //            employeeMapper.updateEmp(employee);

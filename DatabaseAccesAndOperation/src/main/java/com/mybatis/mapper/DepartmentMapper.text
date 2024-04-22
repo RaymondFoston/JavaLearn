@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.mapper.DepartmentMapper">
+
+    <!--deptPlus-->
+    <resultMap id="dept" type="com.mybatis.entity.Department">
+        <id column="dep_id" property="id"/>
+        <result column="departmentName" property="departmentName"/>
+        <!--collection定义关联集合类型属性的封装规则
+                    ofType: 指定集合里面元素的类型
+        -->
+        <collection property="employees" ofType="com.mybatis.entity.Employee">
+            <id column="id" property="id"/>
+            <result column="last_name" property="lastName"/>
+            <result column="gendor" property="gendor"/>
+            <result column="email" property="email"/>
+        </collection>
+    </resultMap>
+    <resultMap id="deptPlusStep" type="department">
+        <id column="id" property="id"/>
+        <result column="dept_name" property="departmentName"/>
+        <collection property="employees" column="id"
+                    select="com.mybatis.mapper.EmployeeMapper.getEmpsByDeptId"
+                    fetchType="lazy"/>
+    </resultMap>
+    <select id="getDeptById" resultMap="dept">
+        select * from department where id=#{dept_id}
+    </select>
+    <select id="getDeptByidPlus" resultMap="deptPlus">
+        select a.*,b.dept_name
+        from employee a left join department b
+                                  on a.dept_id=b.id
+        where a.dept_id=#{id}
+    </select>
+    <select id="getDeptByidPlusStep" resultMap="deptPlusStep">
+        select * from department where id=#{id}
+    </select>
+</mapper>

@@ -1,88 +1,130 @@
 package org.example;
 
-
 import com.mybatis.entity.Employee;
 import com.mybatis.mapper.EmployeeMapper;
-import com.mybatis.mapper.EmployeeMapperAnnotation;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class MybatisTest {
 
-    private SqlSession sqlSession; //不能这样使用，每次使用都应该创建新的对象
-    //Constructor
-    //构造方法
-    public  MybatisTest() {
-        //加载mybatis全局配置文件
+    private EmployeeMapper employeeMapper;
+    private SqlSession sqlSession;
+    @Before
+    public void employeeMapper(){
+        //使用Mybatis第一步: 获取sqlSessionFactory对象
         String resource = "mybatis-conf.xml";
         InputStream inputStream = null;
         try {
             inputStream = Resources.getResourceAsStream(resource);
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
         //获取sqlSessionFactory对象
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        // 获取sqlSession 实例,能直接执行已经映射的sql语句
+        //sqlSession对象非线程安全，使用一次创建一次销毁一次
         sqlSession = sqlSessionFactory.openSession();
-        System.out.println("Constructor is invoked~");
-
+        employeeMapper = sqlSession.getMapper(EmployeeMapper.class);
+    }
+    @After
+    public void finalAction(){
+        sqlSession.close();
+    }
+    public void printEmployeeList(List<Employee> employees){
+        for(Employee employee: employees){
+            System.out.println(employee);
+        }
     }
 
-
     @Test
-    public void test1()  {
-        //获取sqlSession对象
-        SqlSession  openSession =  sqlSession;
-        /**
-        指向配置文件
-         */
-        //参数为命名空间+selectId,其中命名空间自定义
-        Employee employee = openSession.selectOne("com.company.mybatis.mapper.EmployeeMapper.getEmployeeByID","1");
+    public void queryAction() {
+        System.out.println("-=-=-=-=-=-=-=-=-=-=查询用户=-=-=-=-=-=-=-=-=-=-=");
+        //查询全部用户
+        List<Employee> employeeList = employeeMapper.getEmployeeList();
+        printEmployeeList(employeeList);
+        System.out.println("================================");
+        //根据id查询用户
+        Employee employee = employeeMapper.getEmployeeByID(1);
         System.out.println(employee);
-        openSession.close();
+        System.out.println("================================");
+        //根据姓名查询
+        employeeList = employeeMapper.getEmpBylastNameLike("J");
+        printEmployeeList(employeeList);
+        System.out.println("================================");
 
     }
+    @Test
+    public void insertAction() {
+        System.out.println("-=-=-=-=-=-=-=-=-=-=添加用户=-=-=-=-=-=-=-=-=-=-=");
+        //添加用户
+        //通过employee对象添加
+        Employee employee = new Employee();
+        employee.setId(6);
+        employee.setLastName("普京");
+        employee.setGendor("male");
+        employee.setAge(59);
+        Boolean addEmployee = employeeMapper.addEmployeeCustomID(employee);
+        sqlSession.commit();
+        printEmployeeList(employeeMapper.getEmployeeList());
+        System.out.println(addEmployee);
+        System.out.println("================================");
+        //通过map对象添加
+        Map<String, Object> employeeMap = new HashMap<String, Object>();
+        employeeMap.put("id", 7);
+        employeeMap.put("lastName", "特朗普");
+        employeeMap.put("gendor", "male");
+        employeeMap.put("age", 46);
+        Boolean addEmployeeMap = employeeMapper.addEmployeeMap(employeeMap);
+        sqlSession.commit();
+        printEmployeeList(employeeMapper.getEmployeeList());
+        System.out.println(addEmployeeMap);
+    }
+    @Test
+    public void updateAction() {
+        //修改用户
+        System.out.println("-=-=-=-=-=-=-=-=-=-=修改用户=-=-=-=-=-=-=-=-=-=-=");
+        Employee employee = new Employee();
+        employee.setId(6);
+        employee.setLastName("尼古拉斯");
+        employee.setGendor("男");
+        Boolean updateEmployee = employeeMapper.updateEmployee(employee);
+        System.out.println(updateEmployee);
+        sqlSession.commit();
+        printEmployeeList(employeeMapper.getEmployeeList());
+        System.out.println(updateEmployee);
 
+    }
+    @Test
+    public void deleteAction(){
+        //删除用户
+        System.out.println("-=-=-=-=-=-=-=-=-=-=删除用户=-=-=-=-=-=-=-=-=-=-=");
+        Boolean deleteEmployeeBy6 = employeeMapper.deleteEmployeeById(6);
+        Boolean deleteEmployeeBy7 = employeeMapper.deleteEmployeeById(7);
+        sqlSession.commit();
+        printEmployeeList(employeeMapper.getEmployeeList());
+        System.out.println(deleteEmployeeBy6&deleteEmployeeBy7);
 
+    }
 
     @Test
-    public void test2(){
-        //获取sqlSesion对象
-        SqlSession  openSession =  sqlSession;
-        /**
-         * 指向Mapper接口文件（此时映射文件与此Mapper绑定）
-         */
-        //获取接口的实现类对象,获取的对象类型为代理对象，执行增删改查的方法
-        EmployeeMapper employeeMapper = openSession.getMapper(EmployeeMapper.class);
-        Employee employee = employeeMapper.getEmployeeByID(1);
-        System.out.println(employeeMapper.getClass());
-        System.out.println(employee.toString());
-    }
-
-    @Test
-    public void test3(){
-        //获取sqlSesion对象
-        SqlSession  openSession =  sqlSession;
-        //获取接口的实现类对象,获取的对象类型为代理对象，执行增删改查的方法
-        EmployeeMapperAnnotation employeeMapper =
-                openSession.getMapper(EmployeeMapperAnnotation.class);
-        Employee employee = employeeMapper.getEmployeeByID(1);
-        System.out.println(employeeMapper.getClass());
-        System.out.println(employee.toString());
-    }
-
-
-    @Override
-    protected void finalize(){
-        System.out.println("in finalize");
+    public void addEmpGetetAutoIncrementID(){
+        Employee employee = new Employee();
+        employee.setLastName("Joy");
+        employee.setGendor("male");
+        employee.setAge(59);
+        Boolean addEmployee = employeeMapper.addEmployeeAutoIncreID(employee);
+        sqlSession.commit();
+        printEmployeeList(employeeMapper.getEmployeeList());
+        System.out.println(addEmployee);
     }
 }
-
-
