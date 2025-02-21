@@ -27,7 +27,7 @@ public class HelloController {
     @ResponseBody
     @RequestMapping("/hello3")
     public String handle(@RequestParam("name") String name){
-        return "Hello,SpringBoot2!" + "你好" + name;
+        return "Hello,SpringBoot2!" + "你好," + name;
     }
     @Autowired
     Car car;
