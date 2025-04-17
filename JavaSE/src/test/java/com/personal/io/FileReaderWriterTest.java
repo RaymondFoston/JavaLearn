@@ -8,7 +8,7 @@ import java.io.*;
  * 文本文件的读取和写入
  * FileReader, FileWriter
  */
-public class Demo3 {
+public class FileReaderWriterTest {
     //默认是覆盖模式
     @Test
     public void write1() throws IOException {

@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * 写入读取二进制文件
  */
-public class Demo2 {
+public class FileInputOutputStreamTest {
     //写入二进制文件
     @Test
     public void writeByte() throws IOException {

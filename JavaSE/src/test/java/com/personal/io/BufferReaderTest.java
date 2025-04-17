@@ -1,5 +1,7 @@
 package com.personal.io;
 
+import org.junit.Test;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,10 +9,12 @@ import java.io.InputStreamReader;
 /**
  * 读取控制台的输入
  */
-public class Demo1 {
+public class BufferReaderTest {
     private  BufferedReader bufferedReader;
-    public static void main(String[] args) throws IOException {
-        Demo1 demo = new Demo1();
+
+    @Test
+    public void test() throws IOException {
+        BufferReaderTest demo = new BufferReaderTest();
         demo.character();
         demo.string();
     }

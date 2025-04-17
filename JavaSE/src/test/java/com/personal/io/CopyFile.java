@@ -7,7 +7,7 @@ import java.io.*;
 /**
  * 复制文件
  */
-public class Demo5 {
+public class CopyFile {
     //不使用缓冲
     @Test
     public void test1() throws IOException {
