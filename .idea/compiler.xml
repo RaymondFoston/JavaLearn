@@ -10,24 +10,23 @@
         <module name="ssm-crud" />
         <module name="DatabaseAccesAndOperation" />
         <module name="UseLogger" />
-        <module name="DatabaseAccessAndOperation" />
-        <module name="springbootDemo" />
+        <module name="SpringMVC" />
+        <module name="Crawler" />
         <module name="Java-WebApplication" />
-        <module name="crawler" />
         <module name="JunitFramework" />
         <module name="Java-WebServer" />
         <module name="CreateObject" />
         <module name="javaSE" />
         <module name="SpringSourceCode" />
+        <module name="Springboot" />
+        <module name="Mybatis" />
         <module name="Java-WebServlet" />
-        <module name="springMVC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="crawler" target="17" />
+      <module name="Crawler" target="17" />
       <module name="CreateObject" target="17" />
       <module name="DatabaseAccesAndOperation" target="17" />
-      <module name="DatabaseAccessAndOperation" target="17" />
       <module name="demo" target="17" />
       <module name="Java-WebApplication" target="17" />
       <module name="Java-WebServer" target="17" />
@@ -36,9 +35,10 @@
       <module name="javaSE" target="1.8" />
       <module name="JunitFramework" target="17" />
       <module name="MyBatis" target="17" />
-      <module name="springbootDemo" target="17" />
+      <module name="Mybatis" target="17" />
+      <module name="Springboot" target="17" />
       <module name="springbootDemo1" target="17" />
-      <module name="springMVC" target="17" />
+      <module name="SpringMVC" target="17" />
       <module name="SpringSourceCode" target="17" />
       <module name="ssm-crud" target="17" />
       <module name="testFramework" target="17" />
@@ -47,9 +47,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringMVC" options="-parameters" />
+      <module name="Springboot" options="-parameters" />
       <module name="demo" options="-parameters" />
-      <module name="springMVC" options="-parameters" />
-      <module name="springbootDemo" options="-parameters" />
       <module name="springbootDemo1" options="-parameters" />
     </option>
   </component>
