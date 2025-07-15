@@ -19,8 +19,8 @@ mvnw*
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
-.iml
+.idea/
+*.iml
 *.iws
 *.ipr
 
