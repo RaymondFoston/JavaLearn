@@ -5,6 +5,15 @@ import org.junit.Test;
 
 public class App {
     @Test
+    public void test0(){
+        char a_char = 'b';
+        int v = a_char + 10;
+        System.out.println(a_char==98);//true
+        System.out.println(v);
+        char c = '[';
+        System.out.println(c==91);
+    }
+    @Test
     public void test1(){
         long value3 = 2147483647;
         int a = 2147483647;
